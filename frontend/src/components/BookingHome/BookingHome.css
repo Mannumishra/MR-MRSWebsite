@@ -1,0 +1,34 @@
+.boking-home-section{
+    width: 100%;
+}
+
+.boking-home-section .booking-container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+.boking-home-section .booking-container .btn-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boking-home-section .booking-container .btn-row .flight-box{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boking-home-section .booking-container .btn-row .flight-box a{
+    
+}
+
+.boking-home-section .booking-container .btn-row .hotel-box{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,135 @@
+.contact-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-section .container{
+    max-width: 1920px;
+    margin-top: 0 auto;
+    padding: 40px 60px;
+}
+
+.contact-section .container .contact-main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-section .container .contact-main-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.contact-section .container .contact-main-container .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #7B3226;
+    /* position: relative; */
+}
+
+.contact-section .container .contact-main-container .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-section .container .contact-main-container .main-container .up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-section .container .contact-main-container .main-container .up .left{
+    width: 48%;
+}
+
+.contact-section .container .contact-main-container .main-container .up .left img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-section .container .contact-main-container .main-container .up form{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: ; */
+}
+
+.contact-section .container .contact-main-container .main-container .up form .same-field{
+    width: 100%;
+    height: 40px;
+}
+
+.contact-section .container .contact-main-container .main-container .up form .same-field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgb(170, 170, 170);
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.contact-section .container .contact-main-container .main-container .up form .textarea{
+    width: 100%;
+    height: 90px;
+}
+
+.contact-section .container .contact-main-container .main-container .up form .textarea textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgb(170, 170, 170);
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.contact-section .container .contact-main-container .main-container .up form .contact-btn{
+padding: 10px;
+border-radius: 10px;
+border: none;
+font-size: 18px;
+font-weight: 600;
+background-color: #7B3226;
+color: white;
+}
+
+.contact-section .container .contact-main-container .main-container .up form .contact-btn:hover{
+    background-color: #934a3f;
+}
+
+
+.contact-section .map-parent{
+    width: 100%;
+    height: 300px;
+}
+
+.contact-section .map-parent iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:847px) {
+    .contact-section .container .contact-main-container .main-container .up{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .contact-section .container .contact-main-container .main-container .up .left{
+        width: 100%;
+    }
+    
+    .contact-section .container .contact-main-container .main-container .up form{
+        width: 100%;
+    }
+}
+
+@media (max-width:550px) {
+    .contact-section .container{
+        padding: 30px 10px;
+    }
+}

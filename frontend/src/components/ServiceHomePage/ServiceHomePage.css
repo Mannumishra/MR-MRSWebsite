@@ -1,0 +1,188 @@
+.service-home-page-section{
+    width: 100%;
+}
+
+.service-home-page-section .service-container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 0px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-home-page-section .service-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.service-home-page-section .service-container .heading span{
+    font-size: 35px;
+    font-weight: 700;
+    color: #7B3226;
+    position: relative;
+}
+
+.service-home-page-section .service-container .heading span::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    left: -55%;
+    top: calc(50% - 1px); 
+    background-color: #7B3226;
+}
+
+.service-home-page-section .service-container .heading span::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    right: -55%;
+    top: calc(50% - 1px); 
+    background-color: #7B3226;
+}
+
+.service-home-page-section .service-container .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center ;
+    gap: 20px;
+}
+
+.service-home-page-section .service-container .main-container .same-col{
+    width: 31%;
+    /* display: flex;
+    flex-direction: column; */
+    height: 330px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(216, 216, 216);
+}
+
+.service-home-page-section .service-container .main-container .same-col .img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.service-home-page-section .service-container .main-container .same-col .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+}
+
+.service-home-page-section .service-container .main-container .same-col:hover .img img{
+    transform: scale(1.1);
+}
+
+.service-home-page-section .service-container .main-container .same-col .content{
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.service-home-page-section .service-container .main-container .same-col .content span{
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.service-home-page-section .service-container .main-container .same-col .content span::after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #C5733C;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.service-home-page-section .service-container .main-container .same-col:hover .content span::after{
+    width: 100%;
+}
+
+.service-home-page-section .service-container .main-container .same-col .content .btns{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.service-home-page-section .service-container .main-container .same-col .content .btns a{
+    background-color: #7B3226;
+    color: white;
+    padding: 5px 20px;
+}
+
+@media (max-width:970px) {
+
+    .service-home-page-section .service-container .main-container .same-col{
+        width: 48%;
+    }
+    
+}
+
+@media (max-width:630px){
+    .service-home-page-section .service-container{
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width:570px){
+    .service-home-page-section .service-container .main-container .same-col{
+        width: 100%;
+    }
+}
+
+@media (max-width:480px){
+    
+.service-home-page-section .service-container .heading span{
+    font-size: 28px;
+    font-weight: 700;
+    color: #7B3226;
+    position: relative;
+}
+
+    .service-home-page-section .service-container .heading span::before{
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 2px;
+        left: -55%;
+        top: calc(50% - 1px); 
+        background-color: #7B3226;
+    }
+    
+    .service-home-page-section .service-container .heading span::after{
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 2px;
+        right: -45%;
+        top: calc(50% - 1px); 
+        background-color: #7B3226;
+    }
+
+}
+
+.main{
+    background-image: url('./backgroundImage.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    object-fit: contain;
+    background-attachment: fixed;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.669);
+    height: 100vh;
+    width: 100%;
+}

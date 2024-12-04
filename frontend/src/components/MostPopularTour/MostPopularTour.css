@@ -1,0 +1,111 @@
+.mostpopular-section {
+    width: 100%;
+}
+
+.mostpopular-section .popular-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mostpopular-section .popular-container .heading {
+    width: 100%;
+    text-align: center;
+}
+
+.mostpopular-section .popular-container .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.mostpopular-section .popular-container .heading h2 span {
+    color: rgb(123, 50, 38);
+}
+
+.mostpopular-section .popular-container .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.mostpopular-section .popular-container .main-container .col {
+    width: 31%;
+    height: 350px;
+    box-shadow: 0px 0px 10px rgb(192, 192, 192);
+    position: relative;
+}
+
+.mostpopular-section .popular-container .main-container .col .img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mostpopular-section .popular-container .main-container .col .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+}
+
+.mostpopular-section .popular-container .main-container .col:hover .img img {
+    transform: scale(1.1);
+}
+
+.mostpopular-section .popular-container .main-container .col .info{
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.mostpopular-section .popular-container .main-container .col .info span{
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mostpopular-section .popular-container .main-container .col .info span::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: #C5733C;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.mostpopular-section .popular-container .main-container .col:hover .info span::after{
+    width: 100%;
+}
+
+@media (max-width:970px) {
+    .mostpopular-section .popular-container .main-container .col {
+        width: 48%;
+    }
+}
+
+@media (max-width:640px) {
+    .mostpopular-section .popular-container{
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width:580px){
+    .mostpopular-section .popular-container .main-container .col {
+        width: 100%;
+        height: 300px;
+    }
+}
+

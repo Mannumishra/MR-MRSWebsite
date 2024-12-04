@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+
+.testimonialbox:hover{
+    box-shadow: inset 0px 0px 23px 6px lightgray;
+
+}
+
+.testimonialbox{
+    border-radius: 1rem;
+    transition: 0.2s;
+}

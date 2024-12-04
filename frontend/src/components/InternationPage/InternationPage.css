@@ -1,0 +1,8 @@
+.internation-bg{
+    width: 100%;
+    height: 300px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

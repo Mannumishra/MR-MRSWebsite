@@ -1,0 +1,131 @@
+footer{
+    width: 100%;
+    color: white;
+}
+
+footer .footer-container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    /* background-color: #274270; */
+    background-color: rgb(197 115 60);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-container .same-col{
+    width: 24%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .footer-container .same-col .heading{
+    width: 100%;
+}
+
+footer .footer-container .same-col .heading span{
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* footer .footer-container .same-col .heading span::after{
+    content: "";
+    width: 70%;
+    height: 3px;
+    background-color: #ED1D26;
+    position: absolute;
+    left: 0%;
+    top: 100%; 
+} */
+
+footer .footer-container .same-col .footerlistsame{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+footer .footer-container .same-col .footerlistsame li a{
+    color: white;
+}
+
+footer .footer-container .same-col .footerlistsame .adress-same{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+footer .footer-container .same-col .footerlistsame .adress-same a{
+    color: white;
+}
+
+footer .footer-container .same-col .social-link{
+    flex-direction: row;
+}
+
+footer .footer-container .same-col .social-link a i{
+    color: white;
+    font-size: 20px;
+}
+
+footer .bottom-footer{
+    background-color: black;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 10px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:990px) {
+
+    footer .footer-container{
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    footer .footer-container .same-col{
+        width: 47%;
+    }
+    
+}
+
+@media (max-width:614px) {
+    footer .bottom-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    footer .footer-container{
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width:550px) {
+    footer .footer-container .same-col{
+        width: 100%;
+    }
+
+    footer .footer-container{
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 20px 20px;
+    }
+    footer .bottom-footer{
+        padding: 10px 0px;
+    }
+    
+    footer .bottom-footer p{
+        font-size: 15px;
+    }
+}

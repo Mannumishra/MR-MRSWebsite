@@ -1,0 +1,46 @@
+.pricingPage-section{
+    width:100%;
+}
+
+.pricingPage-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pricingPage-section .container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.pricingPage-section .container .heading span{
+    font-size: 17px;
+    font-weight: 700;
+    position: relative;
+    color: #7B3226;
+    /* display: block; */
+}
+
+.pricingPage-section .container .heading span::before{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    left: -70%;
+    top: calc(50% - 1px); 
+    background-color: #7B3226;
+}
+
+.pricingPage-section .container .heading span::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    right: -70%;
+    top: calc(50% - 1px); 
+    background-color: #7B3226;
+}

@@ -1,0 +1,136 @@
+.bg {
+  position: relative;
+  /* background-image: url('https://adimudra.com/assets/images/panorama.jpg'); */
+  background-image: url(./bg.png);
+  /* background-color: white; */
+  background-size: cover;
+  background-position: center;
+
+}
+
+.passenger-count{
+  width: 31%;
+}
+
+.bookings{
+  background-image: url(./bg.png);
+}
+
+.linear-color-hotel{
+  background: linear-gradient(40deg, rgba(123,50,38,1) 0%, rgba(123,50,38,1) 0%, rgba(197,115,60,1) 100%);
+}
+
+.linear-color-flight{
+  background: linear-gradient(25deg, rgba(123,50,38,1) 0%, rgba(123,50,38,1) 0%, rgba(197,115,60,1) 100%);
+}
+
+.bg1 {
+  position: relative;
+  /* background-image: url('https://img.freepik.com/free-photo/sunset-pool_1203-3192.jpg?t=st=1712919217~exp=1712922817~hmac=25aa46fae197b5cb4c543b871d7caa3d212f78514563305fedfc23f190e51395&w=996'); */
+  /* background-image: url('https://img.freepik.com/premium-photo/hotel-by-sea-with-swimming-pool-generative-ai_225446-7159.jpg?w=996'); */
+  background-image: url(./bg.png);
+  /* background-color: white; */
+  background-size: cover;
+  background-position: center;
+}
+
+.bg::after,
+.bg1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+  top: 0;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.24); */
+}
+
+.active {
+  scale: 1.07;
+}
+
+.bookings {
+  position: relative;
+  z-index: 99;
+}
+
+/* Hide the default arrow */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  background-color: #ff0000;
+}
+
+/* Style the when hovered */
+select:hover {
+  border-color: #aaa;
+}
+
+/* Style the when focused */
+select:focus {
+  border-color: #3af900;
+  outline: none;
+}
+
+/* Style the when an option is selected */
+select option:checked {
+  background-color: #f0f4f8;
+  color: #1a202c;
+}
+
+/* Style the options */
+select option {
+  padding: 0.5rem;
+}
+
+/* Style the list */
+select:focus::-ms-value {
+  color: transparent;
+}
+
+.small-cap {
+  font-variant: small-caps;
+}
+
+.flight-container{
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flight-container .left{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flight-container .left .field-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flight-container .left .field-row .same-field{
+  height: 40px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flight-container .left .field-row .same-field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.flight-container .right{
+  width: 38%;
+}
