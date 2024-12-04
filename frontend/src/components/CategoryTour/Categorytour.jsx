@@ -13,7 +13,7 @@ const Categorytour = () => {
             if (res.status === 200) {
                 console.log(res)
                 const newData = res.data.data;
-                const filterData = newData.filter((x) => x.packagecity === key);
+                const filterData = newData.filter((x) => x.packagecity.trim() === key.trim());
                 setData(filterData);
             }
         } catch (error) {
@@ -42,16 +42,16 @@ const Categorytour = () => {
                                         <img src={item.pic} alt={item.packagecity} />
                                     </div>
                                     <div className="info">
-                                       <p> <span className="uppercase " style={{color:"orange" , fontSize:20 , fontWeight:"700"}}>{item.packagedestination}</span></p>
-                                       <p> <span className="uppercase">{item.packageheading}</span></p>
-                                       <button style={{color:"navy" ,fontSize:18 , fontWeight:"500"}}>View More</button>
+                                        <p> <span className="uppercase " style={{ color: "orange", fontSize: 20, fontWeight: "700" }}>{item.packagedestination}</span></p>
+                                        <p> <span className="uppercase">{item.packageheading}</span></p>
+                                        <button style={{ color: "navy", fontSize: 18, fontWeight: "500" }}>View More</button>
                                     </div>
                                 </Link>
-                               
+
                             </div>
                         ))}
                     </div> : <h3 className='text-center'>
-                      {  `No packages available for this ${key} city .`}
+                        {`No packages available for this ${key} city .`}
                     </h3>
                 }
             </div>
