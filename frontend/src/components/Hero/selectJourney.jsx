@@ -108,7 +108,7 @@ export default function BasicTabs() {
   const SubmitFlightdata = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post("http://localhost:8000/api/flight", flightData)
+      const res = await axios.post("https://api.trip.digiindiasolutions.com/api/flight", flightData)
       if (res.status === 200) {
         toast.success("Your Inquery Send Successfully")
         setFlightData({
@@ -151,7 +151,7 @@ export default function BasicTabs() {
     e.preventDefault()
     console.log(hotelData)
     try {
-      const res = await axios.post("http://localhost:8000/api/hotel", hotelData)
+      const res = await axios.post("https://api.trip.digiindiasolutions.com/api/hotel", hotelData)
       if (res.status === 200) {
         toast.success("Your Inquery Send Successfully")
         setHotelData({

@@ -34,7 +34,7 @@ const AllCityPackage = () => {
 
     const getCitydata = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/city");
+            let res = await axios.get("https://api.trip.digiindiasolutions.com/api/city");
             const newData = res.data.data;
             setData(newData.reverse());
         } catch (error) {
@@ -44,7 +44,7 @@ const AllCityPackage = () => {
 
     const deleteRecord = async (_id) => {
         try {
-            let res = await axios.delete("http://localhost:8000/api/city/" + _id);
+            let res = await axios.delete("https://api.trip.digiindiasolutions.com/api/city/" + _id);
             if (res.status === 200) {
                 toast.success("Deleted successfully");
                 getCitydata();

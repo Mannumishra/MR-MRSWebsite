@@ -6,7 +6,7 @@ function DomesticTour() {
     const [data, setData] = useState([])
     const getcityData = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/city")
+            let res = await axios.get("https://api.trip.digiindiasolutions.com/api/city")
             console.log(res)
             const newData = res.data.data
             const filterdata = newData.filter((x) => x.domesinternal == "DOMESTIC TOUR")

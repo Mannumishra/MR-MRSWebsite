@@ -16,7 +16,7 @@ const EditCityPackage = () => {
 
     const getCity = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/city/" + _id)
+            let res = await axios.get("https://api.trip.digiindiasolutions.com/api/city/" + _id)
             console.log(res)
             setData(res.data.data)
         } catch (error) {
@@ -44,7 +44,7 @@ const EditCityPackage = () => {
         e.preventDefault()
         setBtnLoading(true)
         try {
-            let res = await axios.put("http://localhost:8000/api/city/" + _id, formData)
+            let res = await axios.put("https://api.trip.digiindiasolutions.com/api/city/" + _id, formData)
             if(res.status===200){
                 toast.success("Record Updated successfully")
                 navigate("/all-city-package")

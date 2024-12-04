@@ -8,7 +8,7 @@ function MostPopularTour() {
 
   const getApiData = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/api/city");
+      let res = await axios.get("https://api.trip.digiindiasolutions.com/api/city");
       if (res.status === 200) {
         setPackages(res.data.data);
       }

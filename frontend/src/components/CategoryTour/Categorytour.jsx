@@ -9,7 +9,7 @@ const Categorytour = () => {
 
     const getApiData = async () => {
         try {
-            let res = await axios.get("http://localhost:8000/api/package");
+            let res = await axios.get("https://api.trip.digiindiasolutions.com/api/package");
             if (res.status === 200) {
                 console.log(res)
                 const newData = res.data.data;
