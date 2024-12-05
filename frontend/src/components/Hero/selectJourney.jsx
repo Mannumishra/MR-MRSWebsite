@@ -201,16 +201,16 @@ export default function BasicTabs() {
                 variant="outlined"
               >
                 <b>
-                  Flight
+                  Package
                 </b>
-                <ConnectingAirportsIcon style={{ color: 'brown' }} />
+                {/* <ConnectingAirportsIcon style={{ color: 'brown' }} /> */}
               </Button>
-              <Button onClick={onHotel} variant="outlined" style={{ color: 'brown', border: '1px solid brown' }}>
+              {/* <Button onClick={onHotel} variant="outlined" style={{ color: 'brown', border: '1px solid brown' }}>
                 <b>
                   Hotel
                 </b>
                 <HomeWorkIcon style={{ color: 'brown' }} />
-              </Button>
+              </Button> */}
             </Typography>
             {isactive === "flight" ? (
               <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -227,10 +227,10 @@ export default function BasicTabs() {
                       letterSpacing: "1px",
                       fontWeight: "600",
                     }}
-                    label="One Way"
+                    label="Package Details"
                     {...a11yProps(0)}
                   />
-                  <Tab
+                  {/* <Tab
                     style={{
                       textTransform: "capitalize",
                       fontSize: "18px",
@@ -240,8 +240,8 @@ export default function BasicTabs() {
                     }}
                     label="Round-Trip"
                     {...a11yProps(1)}
-                  />
-                  <Tab
+                  /> */}
+                  {/* <Tab
                     style={{
                       textTransform: "capitalize",
                       fontSize: "18px",
@@ -251,7 +251,7 @@ export default function BasicTabs() {
                     }}
                     label="Multi-City"
                     {...a11yProps(2)}
-                  />
+                  /> */}
                 </Tabs>
                 <CustomTabPanel value={value} index={0}>
                   <Box
@@ -411,7 +411,7 @@ export default function BasicTabs() {
                   </Box>
                 </CustomTabPanel>
 
-                <CustomTabPanel value={value} index={1}>
+                {/* <CustomTabPanel value={value} index={1}>
                   <Box
                     style={{
                       display: "flex",
@@ -567,9 +567,9 @@ export default function BasicTabs() {
                       </Grid>
                     </form>
                   </Box>
-                </CustomTabPanel>
+                </CustomTabPanel> */}
 
-                <CustomTabPanel value={value} index={2}>
+                {/* <CustomTabPanel value={value} index={2}>
                   <Box
                     style={{
                       display: "flex",
@@ -734,7 +734,7 @@ export default function BasicTabs() {
                   >
 
                   </Box>
-                </CustomTabPanel>
+                </CustomTabPanel> */}
               </Box>
             ) : isactive === "hotel" ? (
               <form action="">

@@ -58,16 +58,16 @@ const MostPopularDetail = () => {
 
   const postData = async (e) => {
     e.preventDefault();
-  
+
     try {
       const userResponse = await axios.post(
         "https://api.trip.digiindiasolutions.com/api/package-inquery",
         packageData
       );
-  
+
       if (userResponse.status === 200) {
         toast.success("Your query has been sent successfully. Redirecting to payment...");
-  
+
         const paymentResponse = await axios.post(
           "https://api.hoodapay.com/initiate-payment",
           {
@@ -85,9 +85,9 @@ const MostPopularDetail = () => {
             headers: { Authorization: `Bearer ${process.env.HOODAPAY_API_TOKEN}` },
           }
         );
-  
+
         const { paymentUrl } = paymentResponse.data;
-  
+
         if (paymentUrl) {
           window.location.href = paymentUrl;
         } else {
@@ -99,7 +99,7 @@ const MostPopularDetail = () => {
       toast.error("An error occurred. Please try again.");
     }
   };
-  
+
 
 
 
@@ -249,7 +249,7 @@ const MostPopularDetail = () => {
                       style={{ background: "green", marginTop: "1rem" }}
                       fullWidth
                       variant="contained"
-                       type="submit"
+                      type="submit"
                     >
                       Pay Now
                     </Button>
@@ -293,12 +293,17 @@ const MostPopularDetail = () => {
             {data.slideimage &&
               data.slideimage.map((image, index) => (
                 <div key={index}>
-                  <img src={image} alt={`slide ${index}`} width="250px" height="250px" />
+                  <img
+                    src={image}
+                    alt={`slide ${index}`}
+                    style={{ width: "250px", height: "200px", objectFit: "cover" }}  // Fixed width and height
+                  />
                 </div>
               ))}
           </Slider>
         </div>
       </Container>
+
     </div>
   );
 };

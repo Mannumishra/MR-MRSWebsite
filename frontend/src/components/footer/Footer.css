@@ -19,7 +19,7 @@ footer .footer-container .same-col{
 
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0px;
 }
 
 footer .footer-container .same-col .heading{
@@ -66,10 +66,24 @@ footer .footer-container .same-col .footerlistsame .adress-same a{
 footer .footer-container .same-col .social-link{
     flex-direction: row;
 }
-
+footer .footer-container .same-col .footerlistsame {
+    display: flex
+;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
 footer .footer-container .same-col .social-link a i{
     color: white;
     font-size: 20px;
+}
+
+.social-link{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 20px;
 }
 
 footer .bottom-footer{

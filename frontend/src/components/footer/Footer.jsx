@@ -22,7 +22,7 @@ const Footer = () => {
               <span>Our Services</span>
             </div>
             <ul className='footerlistsame'>
-              <li><Link to={'/flight'}>Flight</Link></li>
+              {/* <li><Link to={'/flight'}>Flight</Link></li> */}
               <li><Link to={'/hotel'}>Hotel</Link></li>
               <li><Link to={'/domestic'}>DOMESTIC TOUR PACKAGES</Link></li>
               <li><Link to={'/internation'}>INTERNATIONAL TOUR PACKAGES</Link></li>
@@ -61,7 +61,7 @@ const Footer = () => {
             <div className="heading">
               <span>Follow On</span>
             </div>
-            <div className="footerlistsame social-link">
+            <div className="social-link">
               <Link target='_blank' to={''}><i class="ri-facebook-box-fill"></i></Link>
               <Link target='_blank' to={'https://twitter.com/tripjarpvtltd'}><i class="ri-twitter-fill"></i></Link>
               <Link target='_blank' to={''}><i class="ri-linkedin-box-fill"></i></Link>

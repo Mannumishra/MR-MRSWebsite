@@ -30,7 +30,7 @@ function MostPopularTour() {
           </h2>
         </div>
         <div className="main-container">
-          {packages.map((item, index) => (
+          {packages.slice(0, 6).map((item, index) => (
             <div className="col" key={index}>
               <Link to={`/categorytour/${item.cityname}`}>
                 <div className="img">
@@ -42,6 +42,7 @@ function MostPopularTour() {
               </Link>
             </div>
           ))}
+          <Link to="/all-tours" className="view-all-button">View All</Link>
         </div>
       </div>
     </section>

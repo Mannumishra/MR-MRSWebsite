@@ -22,14 +22,14 @@ function ServiceHomePage() {
                     <span>Our Services</span>
                 </div>
                 <div className="main-container">
-                    <Link to={'/flight'} className="same-col">
+                    {/* <Link to={'/flight'} className="same-col">
                         <div className="img">
                             <img src={flight} alt="" />
                         </div>
                         <div className="content">
                             <span>FLIGHT BOOKINGS</span>
                         </div>
-                    </Link>
+                    </Link> */}
                     <Link to={'/hotel'} className="same-col">
                         <div className="img">
                             <img src={hotel} alt="" />
