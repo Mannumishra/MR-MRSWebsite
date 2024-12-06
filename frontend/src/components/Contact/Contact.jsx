@@ -20,7 +20,7 @@ function Contact() {
   const postData = async (e) => {
     e.preventDefault()
     try {
-      let res = await axios.post("https://api.trip.digiindiasolutions.com/api/contact", data)
+      let res = await axios.post("https://api.mrandmrsperfecttrips.in/api/contact", data)
       if (res.status === 200) {
         toast.success(res.data.message)
         setData({

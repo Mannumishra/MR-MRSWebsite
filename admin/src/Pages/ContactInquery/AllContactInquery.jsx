@@ -10,7 +10,7 @@ const AllContactInquery = () => {
 
     const getApiData = async () => {
         try {
-            const res = await axios.get("https://api.trip.digiindiasolutions.com/api/contact")
+            const res = await axios.get("https://api.mrandmrsperfecttrips.in/api/contact")
             console.log(res)
             if (res.status === 200) {
                 const newData = res.data.data

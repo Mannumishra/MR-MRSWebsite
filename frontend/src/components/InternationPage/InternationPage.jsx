@@ -6,7 +6,7 @@ function InternationPage() {
     const[ data,setData] = useState([])
     const getApidata = async()=>{
         try {
-            let res = await axios.get("https://api.trip.digiindiasolutions.com/api/city")
+            let res = await axios.get("https://api.mrandmrsperfecttrips.in/api/city")
             const newData = res.data.data
             const filterdata = newData.filter((x)=>x.domesinternal=="INTERNATIONAL TOUR")
             setData(filterdata)

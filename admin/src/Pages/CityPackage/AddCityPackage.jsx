@@ -31,7 +31,7 @@ const AddCityPackage = () => {
         e.preventDefault()
         setIsloding(true)
         try {
-            const res = await axios.post("https://api.trip.digiindiasolutions.com/api/city", formData)
+            const res = await axios.post("https://api.mrandmrsperfecttrips.in/api/city", formData)
             if (res.status === 200) {
                 setIsloding(false)
                 toast.success("City created successfully")

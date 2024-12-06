@@ -9,7 +9,7 @@ const AllFlight = () => {
     const [data, setData] = useState([])
     const getData = async () => {
         try {
-            let res = await axios.get("https://api.trip.digiindiasolutions.com/api/flight")
+            let res = await axios.get("https://api.mrandmrsperfecttrips.in/api/flight")
             if (res.status === 200) {
                 const newDate = res.data.data
                 setData(newDate.reverse())

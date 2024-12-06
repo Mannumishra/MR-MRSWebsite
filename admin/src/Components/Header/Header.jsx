@@ -18,7 +18,7 @@ const Header = () => {
       <header>
         <div className="top-head">
           <div className="right">
-            <h2>TripJar Admin Panel</h2>
+            <h2>MR AND MRS PERFECT TRIP Admin Panel</h2>
             <div className="bar" onClick={handletoggleBtn}>
               <i class="fa-solid fa-bars"></i>
             </div>

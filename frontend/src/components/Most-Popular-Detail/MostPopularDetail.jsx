@@ -36,7 +36,7 @@ const MostPopularDetail = () => {
 
   const getApiData = async () => {
     try {
-      let res = await axios.get("https://api.trip.digiindiasolutions.com/api/package/" + _id);
+      let res = await axios.get("https://api.mrandmrsperfecttrips.in/api/package/" + _id);
       const fetchedData = res.data.data;
       setData(fetchedData);
       const dayDetails = [];
@@ -61,7 +61,7 @@ const MostPopularDetail = () => {
 
     try {
       const userResponse = await axios.post(
-        "https://api.trip.digiindiasolutions.com/api/package-inquery",
+        "https://api.mrandmrsperfecttrips.in/api/package-inquery",
         packageData
       );
 

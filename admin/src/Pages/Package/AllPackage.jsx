@@ -18,7 +18,7 @@ const AllPackage = () => {
 
     const fetchData = async () => {
         try {
-            const res = await axios.get(`https://api.trip.digiindiasolutions.com/api/package?page=${currentPage}&limit=${PAGE_LIMIT}`);
+            const res = await axios.get(`https://api.mrandmrsperfecttrips.in/api/package?page=${currentPage}&limit=${PAGE_LIMIT}`);
             console.log(res.data);
             setData(res.data.data);
             console.log(data[2].packageinclude[0])
@@ -43,7 +43,7 @@ const AllPackage = () => {
                 confirmButtonText: 'Yes, delete it!'
             });
             if (result.isConfirmed) {
-                await axios.delete(`https://api.trip.digiindiasolutions.com/api/package/${id}`);
+                await axios.delete(`https://api.mrandmrsperfecttrips.in/api/package/${id}`);
                 toast.success('Package deleted successfully!');
                 fetchData();
             }

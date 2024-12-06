@@ -9,7 +9,7 @@ const AllHotel = () => {
     const [data, setData] = useState([])
     const getData = async () => {
         try {
-            let res = await axios.get("https://api.trip.digiindiasolutions.com/api/hotel")
+            let res = await axios.get("https://api.mrandmrsperfecttrips.in/api/hotel")
             if (res.status === 200) {
                 const newDate = res.data.data
                 setData(newDate.reverse())

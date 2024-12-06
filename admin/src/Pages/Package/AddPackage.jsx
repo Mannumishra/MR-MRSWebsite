@@ -12,7 +12,7 @@ const AddPackage = () => {
 
     const getcitydata = async () => {
         try {
-            let res = await axios.get("https://api.trip.digiindiasolutions.com/api/city");
+            let res = await axios.get("https://api.mrandmrsperfecttrips.in/api/city");
             if (res.status === 200) setCityData(res.data.data);
         } catch (error) {
             console.log(error);
@@ -102,7 +102,7 @@ const AddPackage = () => {
                 formData.append(`day${index + 1}`, day);
             });
 
-            const res = await axios.post("https://api.trip.digiindiasolutions.com/api/package", formData);
+            const res = await axios.post("https://api.mrandmrsperfecttrips.in/api/package", formData);
             console.log(res)
             if (res.status === 200) {
                 toast.success("New Package Added successfully");
