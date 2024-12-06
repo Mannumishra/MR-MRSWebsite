@@ -71,7 +71,7 @@ const PrivacyPolicy = () => {
                         <strong>Email:</strong> mrandmrsperfecttrips@gmail.com
                     </li>
                     <li>
-                        <strong>Phone:</strong> 9157575749, 8949655261
+                        <strong>Phone:</strong> 9699862917
                     </li>
                 </ul>
             </section>

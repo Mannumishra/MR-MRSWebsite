@@ -258,7 +258,7 @@ const MostPopularDetail = () => {
               </Box>
             </Modal>
             <Typography>
-              <button className="whatsapp"><a href="https://wa.me/9354757842" target="_blank" rel="noopener noreferrer">WhatsApp Me</a>
+              <button className="whatsapp"><a href="https://wa.me/9699862917" target="_blank" rel="noopener noreferrer">WhatsApp Me</a>
               </button>
             </Typography>
           </Grid>

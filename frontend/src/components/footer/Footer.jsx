@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
             <div className="number adress-same">
               <i className="ri-phone-fill"></i>
-              <a href="tel:+919157575749,+918949655261">9157575749 , 8949655261</a>
+              <a href="tel:+919699862917">9699862917</a>
             </div>
 
             {/* <div className="number adress-same">
