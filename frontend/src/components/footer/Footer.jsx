@@ -15,6 +15,9 @@ const Footer = () => {
             <li><Link>About-Us</Link></li>
             <li><Link to={'/testimonial'}>Testimonial</Link></li>
             <li><Link to={'/contact'}>Contact</Link></li>
+            <li><Link to={'/privacy-policy'}>Privacy & Policy</Link></li>
+            <li><Link to={'/terms-conditions'}>Term & Condition</Link></li>
+            <li><Link to={'/return-refund'}>Return & Refund Policy</Link></li>
           </ul>
         </div>
         <div className="same-col col-2">
@@ -23,7 +26,7 @@ const Footer = () => {
           </div>
           <ul className='footerlistsame'>
             {/* <li><Link to={'/flight'}>Flight</Link></li> */}
-            <li><Link to={'/hotel'}>Hotel</Link></li>
+            {/* <li><Link to={'/hotel'}>Hotel</Link></li> */}
             <li><Link to={'/domestic'}>DOMESTIC TOUR PACKAGES</Link></li>
             <li><Link to={'/internation'}>INTERNATIONAL TOUR PACKAGES</Link></li>
             <li><Link to={'/education'}>EDUCATIONAL TOUR PACKAGES</Link></li>

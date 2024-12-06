@@ -22,6 +22,9 @@ import MostPopularDetail from './components/Most-Popular-Detail/MostPopularDetai
 import Categorytour from './components/CategoryTour/Categorytour'
 import toast, { Toaster } from 'react-hot-toast';
 import AllTours from './components/AllTours/AllTours'
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy'
+import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions'
+import ReturnAndRefund from './components/ReturnAndRefund/ReturnAndRefund'
 
 // import LoginPage from './components/LoginPage/LoginPage'
 
@@ -48,6 +51,9 @@ function App() {
         <Route path='/whychoose' element={<WhyChooseUsPage/>} />
         <Route path='/Our-Tour-Package-Detail/:_id' element={<MostPopularDetail/>} />
         <Route path='/all-tours' element={<AllTours/>} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsAndConditions />} />
+        <Route path="/return-refund" element={<ReturnAndRefund />} />
 
         
       </Routes>
